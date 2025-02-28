@@ -22,4 +22,4 @@ jobs:
 
     - name: Run script
       run: |
-        python <script-name>.py
+        python tubi_scraper.py
