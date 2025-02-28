@@ -1,0 +1,11 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="ABC News Live",ABC News Live
+https://lnc-abc-news.tubi.video/index.m3u8
+#EXTINF:-1 tvg-name="LiveNOW from FOX",LiveNOW from FOX
+https://lnc-fox-live-now.tubi.video/index.m3u8
+#EXTINF:-1 tvg-name="Tubi News",Tubi News
+https://lnc-tubi-news.tubi.video/playlist.m3u8
+#EXTINF:-1 tvg-name="ION",ION
+https://lnc-ion.tubi.video/playlist.m3u8
+#EXTINF:-1 tvg-name="NBC News NOW",NBC News NOW
+https://lnc-nbc-news-now.tubi.video/playlist.m3u8
