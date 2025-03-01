@@ -31,7 +31,14 @@ jobs:
           echo "Removed old files (if they existed)"
 
       - name: Run tubi_scraper.py
-        run: python tubi_scraper.py
+        run: |
+          python tubi_scraper.py > scraper_output.log 2>&1 || {
+            echo "Script failed, see logs below:"
+            cat scraper_output.log
+            exit 1
+          }
+          echo "Script output:"
+          cat scraper_output.log
         shell: /usr/bin/bash -e {0}
         env:
           pythonLocation: /opt/hostedtoolcache/Python/3.13.2/x64
@@ -51,3 +58,10 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload logs as artifact
+        if: always()  # Runs even if previous steps fail
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-logs
+          path: scraper_output.log
