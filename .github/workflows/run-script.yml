@@ -27,7 +27,7 @@ jobs:
 
       - name: Remove old files
         run: |
-          rm -f tubi_playlist.m3u tubi_epgus.xml
+          rm -f tubi_playlist.m3u tubi_epg.xml
           echo "Removed old files (if they existed)"
 
       - name: Run tubi_scraper.py
