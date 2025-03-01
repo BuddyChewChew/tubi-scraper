@@ -1,5 +1,5 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg.xml"
-# Generated on 2025-03-01T05:49:53.605050
+# Generated on 2025-03-01T17:39:08.594257
 #EXTINF:-1 tvg-id="618762" tvg-logo="https://canvas-lb.tubitv.com/opts/Xzzw_op-3BJ_Ew==/a3419933-ef7c-435f-a963-10be102b0dcd/CHgQeDoFMS4xLjZAAQ==" group-title="National News",ABC News Live
 https://live-manifest.production-public.tubi.io/live/10154005-877b-45cb-b6a5-81eca4662c74/playlist.m3u8
 #EXTINF:-1 tvg-id="400000012" tvg-logo="https://canvas-lb.tubitv.com/opts/V6aFdoqX6ocCfQ==/8928da85-c7af-4da6-a0a1-9a32e3e5b2e8/CHgQeDoFMS4xLjZAAQ==" group-title="Sports On Now",ACCDN
@@ -324,8 +324,6 @@ https://live-manifest.production-public.tubi.io/live/ae9c975d-37c5-45d2-8f2c-e90
 https://live-manifest.production-public.tubi.io/live/0f2f8e9a-90c4-400d-a487-ec33302f551a/playlist.m3u8
 #EXTINF:-1 tvg-id="400000094" tvg-logo="https://canvas-lb.tubitv.com/opts/OMUgNla_iOsVVQ==/dfdffa87-f1cf-4849-baab-6d55e3c3f3d6/CHgQeDoFMS4xLjZAAQ==" group-title="True Crime",UnXplained Zone
 https://live-manifest.production-public.tubi.io/live/21e7aace-4e45-4e2e-ad0c-92ca31409719/playlist.m3u8
-#EXTINF:-1 tvg-id="610463" tvg-logo="https://canvas-lb.tubitv.com/opts/w_a7O_9CBQXjwg==/8da5a668-c2a6-4e29-aebd-e1e0e02e06b6/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",Very Boston WCVB
-https://live-manifest.production-public.tubi.io/live/69565621-2dc1-4295-8d0d-258a2b6f54d7/playlist.m3u8
 #EXTINF:-1 tvg-id="666613" tvg-logo="https://canvas-lb.tubitv.com/opts/KsZ7FdxWGIMx1A==/e9857bc6-ee9a-4823-b3ea-ab97d0a85143/CHgQeDoFMS4xLjZAAQ==" group-title="Pop Culture",Vice
 https://live-manifest.production-public.tubi.io/live/b1d0f74a-e258-452d-a96a-7468f70bb448/playlist.m3u8
 #EXTINF:-1 tvg-id="680705" tvg-logo="https://canvas-lb.tubitv.com/opts/K8OoIdRjWsTQ_w==/5583c936-6239-4da3-b733-a9aaeebbc2fe/CHgQeDoFMS4xLjZAAQ==" group-title="Classic TV",Wanted: Dead or Alive
