@@ -14,13 +14,6 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def get_proxies(country_code):
-    """
-    Fetch a list of proxies for a specific country from ProxyScrape.
-    Args:
-        country_code (str): The country code for which to fetch proxies.
-    Returns:
-        list: A list of proxies in the format 'socks4://ip:port'.
-    """
     url = f"https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=10000&country={country_code}&ssl=all&anonymity=elite"
     response = requests.get(url)
     if response.status_code == 200:
@@ -31,18 +24,13 @@ def get_proxies(country_code):
         return []
 
 def fetch_channel_list(proxy, retries=3):
-    """
-    Fetch the channel list from Tubi using a specific proxy.
-    Args:
-        proxy (str): Proxy to use for the request (format: "protocol://ip:port").
-        retries (int): Number of retries for fetching data.
-    Returns:
-        list: JSON data of the channel list or an empty list if fetch fails.
-    """
     url = "https://tubitv.com/live"
     for attempt in range(retries):
         try:
-            response = requests.get(url, proxies={"http": proxy, "https": proxy}, verify=False, timeout=20)
+            if proxy:
+                response = requests.get(url, proxies={"http": proxy, "https": proxy}, verify=False, timeout=20)
+            else:
+                response = requests.get(url, verify=False, timeout=20)
             response.encoding = 'utf-8'
             if response.status_code != 200:
                 print(f"Failed to fetch data from {url} using proxy {proxy}. Status code: {response.status_code}")
@@ -80,7 +68,6 @@ def fetch_channel_list(proxy, retries=3):
 
 def create_group_mapping(json_data):
     group_mapping = {}
-
     if isinstance(json_data, list):
         for item in json_data:
             content_ids_by_container = item.get('epg', {}).get('contentIdsByContainer', {})
@@ -96,7 +83,6 @@ def create_group_mapping(json_data):
                 group_name = category.get('name', 'Other')
                 for content_id in category.get('contents', []):
                     group_mapping[str(content_id)] = group_name
-
     return group_mapping
 
 def fetch_epg_data(channel_list):
@@ -132,20 +118,17 @@ def normalize_text(text):
 
 def create_m3u_playlist(epg_data, group_mapping, country):
     sorted_epg_data = sorted(epg_data, key=lambda x: x.get('title', '').lower())
-
     playlist = f"#EXTM3U url-tvg=\"https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg{country}.xml\"\n"
+    playlist += f"# Generated on {datetime.now().isoformat()}\n"  # Add timestamp
     seen_urls = set()
 
     for elem in sorted_epg_data:
         channel_name = elem.get('title', 'Unknown Channel')
-
         channel_name = channel_name.encode('utf-8', errors='ignore').decode('utf-8', errors='ignore')
-
         stream_url = unquote(elem['video_resources'][0]['manifest']['url']) if elem.get('video_resources') else ''
         clean_url = clean_stream_url(stream_url)
         tvg_id = str(elem.get('content_id', ''))
         logo_url = elem.get('images', {}).get('thumbnail', [None])[0]
-
         group_title = group_mapping.get(tvg_id, 'Other')
         group_title = group_title.encode('utf-8', errors='ignore').decode('utf-8', errors='ignore')
 
@@ -165,12 +148,10 @@ def convert_to_xmltv_format(iso_time):
 
 def create_epg_xml(epg_data):
     root = ET.Element("tv")
-
     for station in epg_data:
         channel = ET.SubElement(root, "channel", id=str(station.get("content_id")))
         display_name = ET.SubElement(channel, "display-name")
         display_name.text = station.get("title", "Unknown Title")
-
         icon = ET.SubElement(channel, "icon", src=station.get("images", {}).get("thumbnail", [None])[0])
 
         for program in station.get('programs', []):
@@ -179,10 +160,8 @@ def create_epg_xml(epg_data):
             stop_time = convert_to_xmltv_format(program.get("end_time", ""))
             programme.set("start", start_time)
             programme.set("stop", stop_time)
-
             title = ET.SubElement(programme, "title")
             title.text = program.get("title", "")
-
             if program.get("description"):
                 desc = ET.SubElement(programme, "desc")
                 desc.text = program.get("description", "")
@@ -191,17 +170,13 @@ def create_epg_xml(epg_data):
     return tree
 
 def save_file(content, filename):
-    script_directory = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(script_directory, filename)
-
+    file_path = os.path.join(os.getcwd(), filename)  # Use current working directory
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(content)
     print(f"File saved: {file_path}")
 
 def save_epg_to_file(tree, filename):
-    script_directory = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(script_directory, filename)
-
+    file_path = os.path.join(os.getcwd(), filename)  # Use current working directory
     tree.write(file_path, encoding='utf-8', xml_declaration=True)
     print(f"EPG XML file saved: {file_path}")
 
@@ -210,43 +185,47 @@ def main():
     for country in countries:
         proxies = get_proxies(country)
         if not proxies:
-            print(f"No proxies found for country {country}. Skipping...")
+            print(f"No proxies found for country {country}. Trying without proxy...")
+            json_data = fetch_channel_list(None)
+        else:
+            for proxy in proxies:
+                print(f"Trying proxy {proxy} for country {country}...")
+                json_data = fetch_channel_list(proxy)
+                if json_data:
+                    break
+            else:
+                print(f"All proxies failed for {country}. Trying without proxy...")
+                json_data = fetch_channel_list(None)
+
+        if not json_data:
+            print(f"Failed to fetch data for {country}")
             continue
 
-        for proxy in proxies:
-            print(f"Trying proxy {proxy} for country {country}...")
-            json_data = fetch_channel_list(proxy)
-            if json_data:
-                print(f"Successfully fetched data using proxy {proxy} for country {country}")
-                channel_list = []
-                if isinstance(json_data, list):
-                    for item in json_data:
-                        content_ids_by_container = item.get('epg', {}).get('contentIdsByContainer', {})
-                        for container_list in content_ids_by_container.values():
-                            for category in container_list:
-                                channel_list.extend(category.get('contents', []))
-                else:
-                    content_ids_by_container = json_data.get('epg', {}).get('contentIdsByContainer', {})
-                    for container_list in content_ids_by_container.values():
-                        for category in container_list:
-                            channel_list.extend(category.get('contents', []))
+        print(f"Successfully fetched data for country {country}")
+        channel_list = []
+        if isinstance(json_data, list):
+            for item in json_data:
+                content_ids_by_container = item.get('epg', {}).get('contentIdsByContainer', {})
+                for container_list in content_ids_by_container.values():
+                    for category in container_list:
+                        channel_list.extend(category.get('contents', []))
+        else:
+            content_ids_by_container = json_data.get('epg', {}).get('contentIdsByContainer', {})
+            for container_list in content_ids_by_container.values():
+                for category in container_list:
+                    channel_list.extend(category.get('contents', []))
 
-                epg_data = fetch_epg_data(channel_list)
-                if not epg_data:
-                    print("No EPG data found.")
-                    continue
+        epg_data = fetch_epg_data(channel_list)
+        if not epg_data:
+            print("No EPG data found.")
+            continue
 
-                group_mapping = create_group_mapping(json_data)
+        group_mapping = create_group_mapping(json_data)
+        m3u_playlist = create_m3u_playlist(epg_data, group_mapping, country.lower())
+        epg_tree = create_epg_xml(epg_data)
 
-                m3u_playlist = create_m3u_playlist(epg_data, group_mapping, country.lower())
-                epg_tree = create_epg_xml(epg_data)
-
-                save_file(m3u_playlist, "tubi_playlist.m3u")
-                save_epg_to_file(epg_tree, "tubi_epg.xml")
-
-                break
-            else:
-                print(f"Failed to fetch data using proxy {proxy} for country {country}. Trying next proxy...")
+        save_file(m3u_playlist, "tubi_playlist.m3u")
+        save_epg_to_file(epg_tree, "tubi_epg.xml")
 
 if __name__ == "__main__":
     main()
