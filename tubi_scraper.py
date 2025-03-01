@@ -40,7 +40,7 @@ def fetch_channel_list(proxy):
     """
     url = "https://tubitv.com/live"
     try:
-        response = requests.get(url, proxies={"http": proxy, "https": proxy}, verify=False)
+        response = requests.get(url, proxies={"http": proxy, "https": proxy}, verify=False, timeout=10)
         response.encoding = 'utf-8'
         if response.status_code != 200:
             print(f"Failed to fetch data from {url} using proxy {proxy}. Status code: {response.status_code}")
