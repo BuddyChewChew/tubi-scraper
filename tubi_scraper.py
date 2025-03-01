@@ -244,8 +244,8 @@ def main():
                 m3u_playlist = create_m3u_playlist(epg_data, group_mapping, country.lower())
                 epg_tree = create_epg_xml(epg_data)
 
-                  save_file(m3u_playlist, "tubi_playlist.m3u")
-                  save_epg_to_file(epg_tree, "tubi_epg.xml")
+                save_file(m3u_playlist, "tubi_playlist.m3u")
+                save_epg_to_file(epg_tree, "tubi_epg.xml")
 
                 break
             else:
