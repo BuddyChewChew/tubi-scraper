@@ -225,7 +225,7 @@ def main():
         epg_tree = create_epg_xml(epg_data)
 
         save_file(m3u_playlist, "tubi_playlist.m3u")
-        save_epg_to_file(epg_tree, "tubi_epgus.xml")
+        save_epg_to_file(epg_tree, "tubi_epg.xml")
 
 if __name__ == "__main__":
     main()
