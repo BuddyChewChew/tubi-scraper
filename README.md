@@ -7,3 +7,5 @@ Work In Progress...
 176 channels with built in epg.
 
 - M3U: https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_playlist.m3u
+
+![Screenshot](https://github.com/BuddyChewChew/tubi-scraper/blob/main/Screenshot%202025-03-01%20010530.jpeg)
