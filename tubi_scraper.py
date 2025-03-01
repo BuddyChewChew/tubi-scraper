@@ -30,56 +30,53 @@ def get_proxies(country_code):
         print(f"Failed to fetch proxies for {country_code}. Status code: {response.status_code}")
         return []
 
-def fetch_channel_list(proxy):
+def fetch_channel_list(proxy, retries=3):
     """
     Fetch the channel list from Tubi using a specific proxy.
     Args:
         proxy (str): Proxy to use for the request (format: "protocol://ip:port").
+        retries (int): Number of retries for fetching data.
     Returns:
         list: JSON data of the channel list or an empty list if fetch fails.
     """
     url = "https://tubitv.com/live"
-    try:
-        response = requests.get(url, proxies={"http": proxy, "https": proxy}, verify=False, timeout=10)
-        response.encoding = 'utf-8'
-        if response.status_code != 200:
-            print(f"Failed to fetch data from {url} using proxy {proxy}. Status code: {response.status_code}")
-            return []
+    for attempt in range(retries):
+        try:
+            response = requests.get(url, proxies={"http": proxy, "https": proxy}, verify=False, timeout=20)
+            response.encoding = 'utf-8'
+            if response.status_code != 200:
+                print(f"Failed to fetch data from {url} using proxy {proxy}. Status code: {response.status_code}")
+                continue
 
-        html_content = response.content.decode('utf-8', errors='replace')
-        html_content = html_content.replace('�', 'ñ')
+            html_content = response.content.decode('utf-8', errors='replace')
+            html_content = html_content.replace('�', 'ñ')
+            soup = BeautifulSoup(html_content, "html.parser")
 
-        soup = BeautifulSoup(html_content, "html.parser")
+            script_tags = soup.find_all("script")
+            target_script = None
+            for script in script_tags:
+                if script.string and script.string.strip().startswith("window.__data"):
+                    target_script = script.string
+                    break
 
-        script_tags = soup.find_all("script")
-        target_script = None
-        for script in script_tags:
-            if script.string and script.string.strip().startswith("window.__data"):
-                target_script = script.string
-                break
+            if not target_script:
+                print("Error: Could not locate the JSON-like data in the page.")
+                print(f"Logging response content for debugging:\n{html_content[:1000]}...")
+                continue
 
-        if not target_script:
-            print("Error: Could not locate the JSON-like data in the page.")
-            print(f"Logging response content for debugging:\n{html_content[:1000]}...")
-            return []
-
-        start_index = target_script.find("{")
-        end_index = target_script.rfind("}") + 1
-        json_string = target_script[start_index:end_index]
-
-        json_string = json_string.encode('utf-8', errors='replace').decode('utf-8')
-
-        json_string = json_string.replace('undefined', 'null')
-        json_string = re.sub(r'new Date\("([^"]*)"\)', r'"\1"', json_string)
-
-        print(f"Extracted JSON-like data (first 500 chars): {json_string[:500]}...")
-
-        data = json.loads(json_string)
-        print(f"Successfully decoded JSON data!")
-        return data
-    except requests.RequestException as e:
-        print(f"Error fetching data using proxy {proxy}: {e}")
-        return []
+            start_index = target_script.find("{")
+            end_index = target_script.rfind("}") + 1
+            json_string = target_script[start_index:end_index]
+            json_string = json_string.encode('utf-8', errors='replace').decode('utf-8')
+            json_string = json_string.replace('undefined', 'null')
+            json_string = re.sub(r'new Date\("([^"]*)"\)', r'"\1"', json_string)
+            print(f"Extracted JSON-like data (first 500 chars): {json_string[:500]}...")
+            data = json.loads(json_string)
+            print(f"Successfully decoded JSON data!")
+            return data
+        except requests.RequestException as e:
+            print(f"Error fetching data using proxy {proxy}: {e}")
+    return []
 
 def create_group_mapping(json_data):
     group_mapping = {}
