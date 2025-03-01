@@ -1,2 +1,2 @@
 Work In Progress...
-176 out 260 working.
+176 out 260 listed and working channels with built in epg.
