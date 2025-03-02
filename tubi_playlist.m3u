@@ -1,5 +1,5 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg.xml"
-# Generated on 2025-03-01T17:39:08.594257
+# Generated on 2025-03-02T02:04:24.823724
 #EXTINF:-1 tvg-id="618762" tvg-logo="https://canvas-lb.tubitv.com/opts/Xzzw_op-3BJ_Ew==/a3419933-ef7c-435f-a963-10be102b0dcd/CHgQeDoFMS4xLjZAAQ==" group-title="National News",ABC News Live
 https://live-manifest.production-public.tubi.io/live/10154005-877b-45cb-b6a5-81eca4662c74/playlist.m3u8
 #EXTINF:-1 tvg-id="400000012" tvg-logo="https://canvas-lb.tubitv.com/opts/V6aFdoqX6ocCfQ==/8928da85-c7af-4da6-a0a1-9a32e3e5b2e8/CHgQeDoFMS4xLjZAAQ==" group-title="Sports On Now",ACCDN
