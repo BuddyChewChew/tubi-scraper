@@ -1,5 +1,5 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg.xml"
-# Generated on 2025-03-06T18:11:34.309606
+# Generated on 2025-03-07T01:53:23.311360
 #EXTINF:-1 tvg-id="618762" tvg-logo="https://canvas-lb.tubitv.com/opts/Xzzw_op-3BJ_Ew==/a3419933-ef7c-435f-a963-10be102b0dcd/CHgQeDoFMS4xLjZAAQ==" group-title="National News",ABC News Live
 https://live-manifest.production-public.tubi.io/live/10154005-877b-45cb-b6a5-81eca4662c74/playlist.m3u8
 #EXTINF:-1 tvg-id="400000012" tvg-logo="https://canvas-lb.tubitv.com/opts/V6aFdoqX6ocCfQ==/8928da85-c7af-4da6-a0a1-9a32e3e5b2e8/CHgQeDoFMS4xLjZAAQ==" group-title="Sports On Now",ACCDN
@@ -152,6 +152,8 @@ https://live-manifest.production-public.tubi.io/live/d1c42cc5-666e-4d3f-963d-18f
 https://live-manifest.production-public.tubi.io/live/4b0b05c4-d5f3-40c5-bd92-e58b5eecce5b/playlist.m3u8
 #EXTINF:-1 tvg-id="400000110" tvg-logo="https://canvas-lb.tubitv.com/opts/VSO63rF3Rsfm2w==/5643edc3-434a-4b31-8363-b00c62011ad4/CHgQeDoFMS4xLjZAAQ==" group-title="Lifestyle",GV TV
 https://live-manifest.production-public.tubi.io/live/6447f090-c8b6-45d2-a086-5abdaddb6490/playlist.m3u8
+#EXTINF:-1 tvg-id="400000164" tvg-logo="https://canvas-lb.tubitv.com/opts/-Q_llPN_fNYbUA==/63cd15f5-1b92-44ec-aa48-da4c4f90fb8f/CHgQeDoFMS4xLjZAAQ==" group-title="Sports On Now",Hagerty
+https://live-manifest.production-public.tubi.io/live/7d917d9c-66d1-4a15-a323-7ad001137c41/playlist.m3u8
 #EXTINF:-1 tvg-id="700406" tvg-logo="https://canvas-lb.tubitv.com/opts/jsf1KwsIhDxv_w==/a9501720-74af-489c-993e-8c38c438e058/CHgQeDoFMS4xLjZAAQ==" group-title="Sci-Fi & Supernatural",HauntTV
 https://live-manifest.production-public.tubi.io/live/891e3b9c-6090-4a1c-ac01-a3e2502e7779/playlist.m3u8
 #EXTINF:-1 tvg-id="400000083" tvg-logo="https://canvas-lb.tubitv.com/opts/R19y28b4wR0sOw==/85396ad7-4f62-4df1-a6a6-433b0e027106/CHgQeDoFMS4xLjZAAQ==" group-title="Sports On Now",HBO Boxing
@@ -267,7 +269,7 @@ https://live-manifest.production-public.tubi.io/live/8e323548-ac9b-48b4-af77-13d
 #EXTINF:-1 tvg-id="400000064" tvg-logo="https://canvas-lb.tubitv.com/opts/Nbi04He3-VcD9g==/2601f920-7f1b-4a8f-a583-00b77ede189e/CHgQeDoFMS4xLjZAAQ==" group-title="Mystery",Silent Witness and New Tricks
 https://live-manifest.production-public.tubi.io/live/ecdd361e-2f86-4a12-afe7-ab11df141568/playlist.m3u8
 #EXTINF:-1 tvg-id="667442" tvg-logo="https://canvas-lb.tubitv.com/opts/v3VVFANHcTBAtw==/e253ba5b-adff-463f-9214-8209790cf04f/CHgQeDoFMS4xLjZAAQ==" group-title="Reality",So…Real
-https://live-manifest.production-public.tubi.io/live/e4211ce1-6607-4aa7-8152-a0c44053cdb2/playlist.m3u8
+https://live-manifest.production-public.tubi.io/live/1857538c-2297-44dc-8424-1601562235a2/playlist.m3u8
 #EXTINF:-1 tvg-id="613763" tvg-logo="https://canvas-lb.tubitv.com/opts/IN3hgyQk_H2LlA==/ffec7159-bf94-4c51-9544-5162e5a57b2f/CHgQeDoFMS4xLjZAAQ==" group-title="Sports On Now",Stadium
 https://live-manifest.production-public.tubi.io/live/30fec756-4948-4ecb-98ae-2fda1cd0ee95/playlist.m3u8
 #EXTINF:-1 tvg-id="658748" tvg-logo="https://canvas-lb.tubitv.com/opts/cNv1BFCfwtiqSg==/5a1c3037-9440-4644-a0fd-489d5554ff1c/CHgQeDoFMS4xLjZAAQ==" group-title="Games & Competition",Supermarket Sweep
