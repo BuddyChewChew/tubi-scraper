@@ -1,5 +1,5 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg.xml"
-# Generated on 2025-03-27T16:37:04.747210
+# Generated on 2025-03-28T02:10:31.221883
 #EXTINF:-1 tvg-id="400000096" tvg-logo="https://canvas-lb.tubitv.com/opts/EwZ67HuPQsqw_g==/f96dfd36-d049-4c63-ae07-410f192f18b6/CHgQeDoFMS4xLjZAAQ==" group-title="True Crime",A&E Crime 360
 https://live-manifest.production-public.tubi.io/live/8cba5c00-34f4-45da-a73a-1e3d813a0cfb/playlist.m3u8
 #EXTINF:-1 tvg-id="618762" tvg-logo="https://canvas-lb.tubitv.com/opts/Xzzw_op-3BJ_Ew==/a3419933-ef7c-435f-a963-10be102b0dcd/CHgQeDoFMS4xLjZAAQ==" group-title="National News",ABC News Live
@@ -126,8 +126,8 @@ https://live-manifest.production-public.tubi.io/live/04431aed-2da0-46e2-b481-c6b
 https://live-manifest.production-public.tubi.io/live/6216cb58-6a43-4524-8269-bd96cd9b3e6e/playlist.m3u8
 #EXTINF:-1 tvg-id="555113" tvg-logo="https://canvas-lb.tubitv.com/opts/kfdKlk93tCKI9w==/0eb089c0-a74d-41dd-9d20-58b99dd39e8f/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",FOX 11 Los Angeles
 https://live-manifest.production-public.tubi.io/live/346a3973-426a-45dc-85fd-a598cc9d1487/playlist.m3u8
-#EXTINF:-1 tvg-id="555107" tvg-logo="https://canvas-lb.tubitv.com/opts/I3pya7C7NzW-GA==/1f29ee18-a20a-4c7e-9fcc-32cc75323183/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",Fox 13 Seattle
-https://live-manifest.production-public.tubi.io/live/4fea5de5-6e83-435c-93dd-3f6242aab93c/playlist.m3u8
+#EXTINF:-1 tvg-id="555114" tvg-logo="https://canvas-lb.tubitv.com/opts/5ASwmsR55rAYdg==/613bb4b9-dc52-49c2-856c-de1cb580883b/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",FOX 2 San Francisco
+https://live-manifest.production-public.tubi.io/live/868956a4-517e-4bba-a9a2-e836183ff010/playlist.m3u8
 #EXTINF:-1 tvg-id="555119" tvg-logo="https://canvas-lb.tubitv.com/opts/yNgjmPf0m6Kr0Q==/293bcf25-0c51-48fe-a73f-be41364b0a8e/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",FOX 5 New York
 https://live-manifest.production-public.tubi.io/live/43fa471a-5820-4153-bab1-2f57e309731d/playlist.m3u8
 #EXTINF:-1 tvg-id="555121" tvg-logo="https://canvas-lb.tubitv.com/opts/_mvMbRBm3_cNlw==/030f186b-cf60-4481-b37a-2d17d42366fa/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",FOX 5 Washington DC
@@ -188,20 +188,14 @@ https://live-manifest.production-public.tubi.io/live/257c5c20-bd7d-4a2f-84b4-090
 https://live-manifest.production-public.tubi.io/live/f0c8870f-8b81-4017-a2f3-4f83a062079e/playlist.m3u8
 #EXTINF:-1 tvg-id="687447" tvg-logo="https://canvas-lb.tubitv.com/opts/_z7SwVVHaz6v9g==/a6ee923c-4dc0-4d93-81a2-31bf11be3a7e/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",KATC News Acadiana
 https://live-manifest.production-public.tubi.io/live/f6651730-2dfa-491a-9f7a-a5900950eab9/playlist.m3u8
-#EXTINF:-1 tvg-id="646488" tvg-logo="https://canvas-lb.tubitv.com/opts/jEJRngcOW90fAA==/5daebc43-cf2c-41d2-b7c4-a39abe0a9cce/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",KGW Portland 8
-https://live-manifest.production-public.tubi.io/live/bcbb847f-045e-4a06-a57d-ea0f8eb9522d/playlist.m3u8
-#EXTINF:-1 tvg-id="644786" tvg-logo="https://canvas-lb.tubitv.com/opts/uPIVORSVxSgqjg==/b2b6d025-79ac-4b66-a34e-486ba4694c94/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",KING Seattle 5
-https://live-manifest.production-public.tubi.io/live/4fb4f3c4-b669-4e21-a0cf-83ff7a1b8b2f/playlist.m3u8
-#EXTINF:-1 tvg-id="650208" tvg-logo="https://canvas-lb.tubitv.com/opts/rQYQx5Ok-ZUSiA==/00215b33-768d-497e-9192-e0d43ddb8270/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",KIRO Seattle
-https://live-manifest.production-public.tubi.io/live/43488734-2382-4c1d-8598-506e5e919f11/playlist.m3u8
-#EXTINF:-1 tvg-id="687453" tvg-logo="https://canvas-lb.tubitv.com/opts/VVYNIILvMxFLHQ==/305f86d1-4110-433a-b910-9a6bcab2bb84/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",KIVI Idaho News 6 Boise
-https://live-manifest.production-public.tubi.io/live/08abe282-ff6b-4565-b4c5-437d9d29b3d5/playlist.m3u8
-#EXTINF:-1 tvg-id="646485" tvg-logo="https://canvas-lb.tubitv.com/opts/4RqyuS7Bekd9EQ==/b76eb6a0-df6b-4688-b5f8-de1a2a23430d/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",KPNX Phoenix 12 News 
-https://live-manifest.production-public.tubi.io/live/89eaeaa9-12cc-434d-aa08-c8db647e4825/playlist.m3u8
-#EXTINF:-1 tvg-id="687460" tvg-logo="https://canvas-lb.tubitv.com/opts/C_kC6htlbiMQwA==/7aa28d6a-6a4b-4ad3-aff7-4c1e4bfc895d/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",KRTV Great Falls
-https://live-manifest.production-public.tubi.io/live/8f59c2e6-cc44-4e1e-bd85-57fe8770257a/playlist.m3u8
-#EXTINF:-1 tvg-id="687452" tvg-logo="https://canvas-lb.tubitv.com/opts/IwbYkjDPRiuGzg==/16cb1af1-f10b-40c7-ae4a-55749d20c97c/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",KTNV 13 Action News
-https://live-manifest.production-public.tubi.io/live/924a4faf-5247-49bf-abff-da9300f4c825/playlist.m3u8
+#EXTINF:-1 tvg-id="603905" tvg-logo="https://canvas-lb.tubitv.com/opts/mJ29dkwdGA69EQ==/48a1e3e7-1088-44c2-91e4-303d9285b9cb/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",KCRA Very Sacramento 3
+https://live-manifest.production-public.tubi.io/live/13785edd-7691-4f47-9f7d-5d754d7292bd/playlist.m3u8
+#EXTINF:-1 tvg-id="603908" tvg-logo="https://canvas-lb.tubitv.com/opts/uv2Of1hgAksDdA==/b8f6e518-aea1-4683-b4a1-6124785d87bf/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",KSBW Very Monterey 8
+https://live-manifest.production-public.tubi.io/live/2e1950bc-a67e-4557-a754-fa0400ac07fa/playlist.m3u8
+#EXTINF:-1 tvg-id="685307" tvg-logo="https://canvas-lb.tubitv.com/opts/PPKFOjGg_wY1hw==/ce41ca1f-0891-40c7-a0dc-f9d13e99e750/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",KSBY News California
+https://live-manifest.production-public.tubi.io/live/ba6d4b00-25a0-4388-8e0a-aca43f073815/playlist.m3u8
+#EXTINF:-1 tvg-id="644781" tvg-logo="https://canvas-lb.tubitv.com/opts/8FjL67SxPGONrA==/991de5a1-427b-4ed5-a594-8951c59897fc/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",KXTV Sacramento ABC10
+https://live-manifest.production-public.tubi.io/live/656c7611-838b-4504-a629-42fc918d9093/playlist.m3u8
 #EXTINF:-1 tvg-id="555127" tvg-logo="https://canvas-lb.tubitv.com/opts/115LjBv7EqTLdA==/f71c682e-37f8-4719-aa89-546d1c4c8bfe/CHgQeDoFMS4xLjZAAQ==" group-title="National News",LiveNOW from FOX
 https://live-manifest.production-public.tubi.io/live/0e36bf49-52c7-4a9f-a732-9a7e2b011a9a/playlist.m3u8
 #EXTINF:-1 tvg-id="400000067" tvg-logo="https://canvas-lb.tubitv.com/opts/GmtBToqtn8AmaA==/e4f84ab2-4935-4063-ad29-cc852b91e3b7/CHgQeDoFMS4xLjZAAQ==" group-title="True Crime",Living with Evil
@@ -245,7 +239,7 @@ https://live-manifest.production-public.tubi.io/live/1d12c8f5-5c6b-48a8-933b-5f8
 #EXTINF:-1 tvg-id="400000116" tvg-logo="https://canvas-lb.tubitv.com/opts/nR-NMSZgGJB39g==/7d258341-afc7-4022-acd4-ce330c6db573/CHgQeDoFMS4xLjZAAQ==" group-title="Sports On Now",NBA FAST Channel
 https://live-manifest.production-public.tubi.io/live/9309d123-2269-421c-b789-9512f1387a73/playlist.m3u8
 #EXTINF:-1 tvg-id="400000061" tvg-logo="https://canvas-lb.tubitv.com/opts/9oCzuwU38o7ozQ==/ece47be9-0d12-47d3-a818-12be0f5a80a5/CHgQeDoFMS4xLjZAAQ==" group-title="Sports On Now",NBA G League
-https://live-manifest.production-public.tubi.io/live/6b792a90-6adb-45aa-b4b4-aa6ea4f31d9a/playlist.m3u8
+https://live-manifest.production-public.tubi.io/live/60b530e6-db37-4958-93df-9f74ec019806/playlist.m3u8
 #EXTINF:-1 tvg-id="556174" tvg-logo="https://canvas-lb.tubitv.com/opts/CEsjFZ6eloxsiQ==/dd770066-df10-4187-b8d5-c31d0b9c0a1f/CHgQeDoFMS4xLjY=" group-title="National News",NBC News NOW
 https://live-manifest.production-public.tubi.io/live/b0db0647-74ef-4130-922a-6d0a36a5f68e/playlist.m3u8
 #EXTINF:-1 tvg-id="557345" tvg-logo="https://canvas-lb.tubitv.com/opts/PBmJNkH1_OHUGA==/08fde41e-4252-484f-8b51-17124415b90c/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",News 12 New York
@@ -354,17 +348,11 @@ https://live-manifest.production-public.tubi.io/live/94ec97d9-4739-4a96-809e-633
 https://live-manifest.production-public.tubi.io/live/184ac516-4c64-42d2-a7af-7042d25dd3b7/playlist.m3u8
 #EXTINF:-1 tvg-id="715945" tvg-logo="https://canvas-lb.tubitv.com/opts/X4SSb5THUeHUnw==/2f1fd1c5-7bdc-475f-841f-9a2a9f3ae75b/CHgQeDoFMS4xLjZAAQ==" group-title="Lifestyle",Welcome Home
 https://live-manifest.production-public.tubi.io/live/f5bc0b0b-482f-4fdc-a463-6e93b6004dfe/playlist.m3u8
-#EXTINF:-1 tvg-id="603181" tvg-logo="https://canvas-lb.tubitv.com/opts/NR4GBscaX9lLvg==/da73fac4-6813-4f05-b7c7-90e1a4d2a800/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",WFTS Tampa Action News
-https://live-manifest.production-public.tubi.io/live/a17808ed-0764-4870-ba63-730e8f4455f2/playlist.m3u8
 #EXTINF:-1 tvg-id="670603" tvg-logo="https://canvas-lb.tubitv.com/opts/l4azoWpOK-d_5w==/991109c5-dce1-4eac-a23f-1d4713c52cbf/CHgQeDoFMS4xLjZAAQ==" group-title="Games & Competition",Wipeout Xtra
 https://live-manifest.production-public.tubi.io/live/16141f5c-4bef-47ab-9f35-17fb833a3474/playlist.m3u8
-#EXTINF:-1 tvg-id="603918" tvg-logo="https://canvas-lb.tubitv.com/opts/q8WRZ-f_eBV6nA==/677269c0-5f19-4be5-ab87-7ab451565d5e/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",WMOR Very Tampa Bay 32
-https://live-manifest.production-public.tubi.io/live/e8fd035d-3873-4c8f-8711-16bf626b63fd/playlist.m3u8
 #EXTINF:-1 tvg-id="692073" tvg-logo="https://canvas-lb.tubitv.com/opts/TkWg0eQh-b5T5g==/4a1d8a18-5086-438b-9298-7381aee4cb83/CHgQeDoFMS4xLjZAAQ==" group-title="Sports On Now",Women's Sports Network
 https://live-manifest.production-public.tubi.io/live/eb4ef15b-b69e-4b49-988f-c1c66a8e64d0/playlist.m3u8
 #EXTINF:-1 tvg-id="400000093" tvg-logo="https://canvas-lb.tubitv.com/opts/YnNDuixBnH_Owg==/0aa317c5-3f1c-4949-9e48-3f257c8293c4/CHgQeDoFMS4xLjZAAQ==" group-title="True Crime",World's Most Evil Killers
 https://live-manifest.production-public.tubi.io/live/b81250ad-f476-4a4b-a824-731dbd24b993/playlist.m3u8
-#EXTINF:-1 tvg-id="603914" tvg-logo="https://canvas-lb.tubitv.com/opts/BYzkUedcUv18NQ==/ae1962c4-e4ca-4d39-a640-0ce16a095932/CHgQeDoFMS4xLjZAAQ==" group-title="Local News",WYFF Very S. Carolina 4
-https://live-manifest.production-public.tubi.io/live/fe48fe84-3c67-48eb-a38f-9278635d342d/playlist.m3u8
 #EXTINF:-1 tvg-id="702892" tvg-logo="https://canvas-lb.tubitv.com/opts/Dr1uV5c7P9sd0A==/075f8826-fdc1-4007-aed3-abe290b90ff7/CHgQeDoFMS4xLjZAAQ==" group-title="Science & Nature",Xplore
 https://live-manifest.production-public.tubi.io/live/959d05b5-9ced-455b-be91-ffa0ba802e71/playlist.m3u8
