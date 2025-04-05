@@ -4,7 +4,7 @@
 All streams are from a FREE publicly available source no DRM content. No login required and no commercials cut from streams. I would suggest visit [tubi](https://tubitv.com/) or download the app for more content like (Movies Ondemand).
 
 
-# Tubi channels with built in epg #
+# Tubi channels with built-in epg #
 
 - M3U: https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_playlist.m3u
 
