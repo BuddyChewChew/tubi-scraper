@@ -1,5 +1,5 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg.xml"
-# Generated on 2026-01-09T02:21:08.821495
+# Generated on 2026-01-10T02:10:54.648909
 #EXTINF:-1 tvg-id="400000096" tvg-logo="https://canvas-lb.tubitv.com/opts/ca2EvME4kxBv3g==/f96dfd36-d049-4c63-ae07-410f192f18b6/CHgQeDoFMS4xLjhAAQ==" group-title="True Crime",A&E Crime 360
 https://live-manifest.production-public.tubi.io/live/d65f6697-9fd2-477f-a56d-26cea1b939b7/playlist.m3u8
 #EXTINF:-1 tvg-id="618762" tvg-logo="https://canvas-lb.tubitv.com/opts/sE__djfzPMUmUg==/a3419933-ef7c-435f-a963-10be102b0dcd/CHgQeDoFMS4xLjhAAQ==" group-title="National News",ABC News Live
@@ -86,6 +86,8 @@ https://live-manifest.production-public.tubi.io/live/7d2f308c-8fdb-4dc5-8736-3c2
 https://live-manifest.production-public.tubi.io/live/01ef20d5-307d-4c6a-9d16-a6f3df1addd3/playlist.m3u8
 #EXTINF:-1 tvg-id="400000117" tvg-logo="https://canvas-lb.tubitv.com/opts/4lVDZh2p_O-K2g==/a95b393f-af18-4bb2-b5cd-bab323fd961f/CHgQeDoFMS4xLjhAAQ==" group-title="Pop Culture",Def Jam
 https://live-manifest.production-public.tubi.io/live/979c72f9-6121-428b-a47c-4e251e8b7c63/playlist.m3u8
+#EXTINF:-1 tvg-id="400000108" tvg-logo="https://canvas-lb.tubitv.com/opts/h3mU1zmKH6a7aA==/e1fddeac-4117-45e8-a880-d46000b4fcda/CHgQeDoFMS4xLjhAAQ==" group-title="Reality",Discovery Turbo TV
+https://live-manifest.production-public.tubi.io/live/e7be5ad5-9044-4151-95d4-a9aae10ab0a5/playlist.m3u8
 #EXTINF:-1 tvg-id="400000088" tvg-logo="https://canvas-lb.tubitv.com/opts/NhkSkf4JPn8YsA==/d81a47a9-92b7-403c-b65b-d4153a9ebefd/CHgQeDoFMS4xLjhAAQ==" group-title="Reality",Dog the Bounty Hunter
 https://live-manifest.production-public.tubi.io/live/d6872865-27e6-4f9c-9e63-ced3057a741c/playlist.m3u8
 #EXTINF:-1 tvg-id="724209" tvg-logo="https://canvas-lb.tubitv.com/opts/L2ZNPcu09aWW3g==/eb9609d4-9dc0-4460-b61e-0b992ec14668/CHgQeDoFMS4xLjhAAQ==" group-title="Documentaries",Dr. G: Medical Examiner
@@ -200,8 +202,6 @@ https://live-manifest.production-public.tubi.io/live/f266b19b-a2b7-4e81-af7d-979
 https://live-manifest.production-public.tubi.io/live/0ebfd814-cf17-4d01-a0e5-19f8df07cf68/playlist.m3u8
 #EXTINF:-1 tvg-id="613765" tvg-logo="https://canvas-lb.tubitv.com/opts/_665V4AxYSxlLA==/652d017f-fb2a-460e-a528-ee54cc6ed872/CHgQeDoFMS4xLjhAAQ==" group-title="Sports On Now",MLB
 https://live-manifest.production-public.tubi.io/live/94ef022e-59ad-486a-81bb-f817613e3df1/playlist.m3u8
-#EXTINF:-1 tvg-id="400000108" tvg-logo="https://canvas-lb.tubitv.com/opts/27Elei7FoHZCIw==/db233fc0-5e25-4078-977c-324669c03581/CHgQeDoFMS4xLjhAAQ==" group-title="Reality",MotorTrend FAST TV
-https://live-manifest.production-public.tubi.io/live/e7be5ad5-9044-4151-95d4-a9aae10ab0a5/playlist.m3u8
 #EXTINF:-1 tvg-id="670587" tvg-logo="https://canvas-lb.tubitv.com/opts/-qf0HyYx16Zneg==/262557d9-a277-464c-b915-e200128f48a0/CHgQeDoFMS4xLjhAAQ==" group-title="Movie Channels",MovieSphere
 https://live-manifest.production-public.tubi.io/live/050aaad2-b60d-4525-9e2e-2465b85cfa43/playlist.m3u8
 #EXTINF:-1 tvg-id="400000048" tvg-logo="https://canvas-lb.tubitv.com/opts/E6SaHrQioslH-g==/1cd9fa65-16d9-40e6-81c3-a81ce2663736/CHgQeDoFMS4xLjhAAQ==" group-title="Pop Culture",MrBeast
