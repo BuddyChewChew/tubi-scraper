@@ -1,5 +1,5 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/BuddyChewChew/tubi-scraper/refs/heads/main/tubi_epg.xml"
-# Generated on 2026-03-28T02:50:39.092980
+# Generated on 2026-03-29T03:24:59.578271
 #EXTINF:-1 tvg-id="400000096" tvg-logo="https://canvas-lb.tubitv.com/opts/PkGioxw_qoRs4Q==/f96dfd36-d049-4c63-ae07-410f192f18b6/CHgQeDoFMS4xLjlAAQ==" group-title="True Crime",A&E Crime 360
 https://live-manifest.production-public.tubi.io/live/d65f6697-9fd2-477f-a56d-26cea1b939b7/playlist.m3u8
 #EXTINF:-1 tvg-id="618762" tvg-logo="https://canvas-lb.tubitv.com/opts/UE7AlcHTNh1JbA==/a3419933-ef7c-435f-a963-10be102b0dcd/CHgQeDoFMS4xLjlAAQ==" group-title="National News",ABC News Live
@@ -136,8 +136,6 @@ https://live-manifest.production-public.tubi.io/live/d906efca-1302-4e29-b0d9-9a1
 https://live-manifest.production-public.tubi.io/live/6035c7fd-efff-4ec7-93dc-aa0c7a58ba47/playlist.m3u8
 #EXTINF:-1 tvg-id="628893" tvg-logo="https://canvas-lb.tubitv.com/opts/GnNXSUczAo3hrg==/ac3a8a9b-0068-488b-a5c6-380f373cc446/CHgQeDoFMS4xLjlAAQ==" group-title="Weather",FOX Weather
 https://live-manifest.production-public.tubi.io/live/f1fd1442-62f5-4663-9049-c08c27f6d980/playlist.m3u8
-#EXTINF:-1 tvg-id="721975" tvg-logo="https://canvas-lb.tubitv.com/opts/TFJ2nrVVCnY-_A==/725e3c88-34f1-4cb7-ad88-cbf6b56f6faa/CHgQeDoFMS4xLjlAAQ==" group-title="Local News",FOX23 Tulsa
-https://live-manifest.production-public.tubi.io/live/e5f8753b-01af-4f0f-8f9e-c6ea0aec03be/playlist.m3u8
 #EXTINF:-1 tvg-id="557344" tvg-logo="https://canvas-lb.tubitv.com/opts/ADINZ0CxEk4Nzg==/134cd1d6-d194-49e9-a057-076ea9c0947d/CHgQeDoFMS4xLjlAAQ==" group-title="Sports On Now",Fubo Sports Network
 https://live-manifest.production-public.tubi.io/live/d8c035df-1076-4aa6-8628-da2ec80781f9/playlist.m3u8
 #EXTINF:-1 tvg-id="400000284" tvg-logo="https://canvas-lb.tubitv.com/opts/eI1d7cSPZQFhOQ==/67bea288-0819-444f-80ed-33c65e5fc502/CHgQeDoFMS4xLjlAAQ==" group-title="Sports On Now",Futcrunch
@@ -180,12 +178,6 @@ https://live-manifest.production-public.tubi.io/live/f1a3d6ca-6a7e-453b-8e89-dc0
 https://live-manifest.production-public.tubi.io/live/2fd87230-572e-47ef-8bae-c282f99b174c/playlist.m3u8
 #EXTINF:-1 tvg-id="400000033" tvg-logo="https://canvas-lb.tubitv.com/opts/_oaMTbqkvgy0VA==/4258e598-4722-409b-8e3c-625f800ba9ba/CHgQeDoFMS4xLjlAAQ==" group-title="Kids & Family",Kartoon Channel!
 https://live-manifest.production-public.tubi.io/live/ede882c2-43d6-4eca-9351-ea29e84dc217/playlist.m3u8
-#EXTINF:-1 tvg-id="603915" tvg-logo="https://canvas-lb.tubitv.com/opts/6OaTlthwvW7Q8g==/b99826e1-4c75-41da-88e0-3fd39d7951fe/CHgQeDoFMS4xLjlAAQ==" group-title="Local News",KHBS Very Arkansas 40
-https://live-manifest.production-public.tubi.io/live/151f5651-5002-49b7-b593-1270b9fefe52/playlist.m3u8
-#EXTINF:-1 tvg-id="687449" tvg-logo="https://canvas-lb.tubitv.com/opts/sExlgyA12MWDaw==/83d5d5af-20d3-494b-8697-5f6a1801df40/CHgQeDoFMS4xLjlAAQ==" group-title="Local News",KJRH 2 News Oklahoma
-https://live-manifest.production-public.tubi.io/live/1f32fa05-2b2c-41b3-baf2-56061914c99b/playlist.m3u8
-#EXTINF:-1 tvg-id="588301" tvg-logo="https://canvas-lb.tubitv.com/opts/uvrics3i3tTWQA==/6ccfc749-ccf2-45d1-9d36-3dcdbda0560a/CHgQeDoFMS4xLjlAAQ==" group-title="Local News",KOCO Very Oklahoma 5
-https://live-manifest.production-public.tubi.io/live/2a4f6135-7915-440e-9623-4999a80bb432/playlist.m3u8
 #EXTINF:-1 tvg-id="400000251" tvg-logo="https://canvas-lb.tubitv.com/opts/BYzaJwTCsR4qOQ==/d4c950c6-5131-47a1-a52b-f0644e28d89a/CHgQeDoFMS4xLjlAAQ==" group-title="True Crime",Law&Crime
 https://live-manifest.production-public.tubi.io/live/315e77b4-d6b2-410a-85fa-08243751ecc1/playlist.m3u8
 #EXTINF:-1 tvg-id="555127" tvg-logo="https://canvas-lb.tubitv.com/opts/T8yaEtMuJkd6MA==/f71c682e-37f8-4719-aa89-546d1c4c8bfe/CHgQeDoFMS4xLjlAAQ==" group-title="National News",LiveNOW from FOX
