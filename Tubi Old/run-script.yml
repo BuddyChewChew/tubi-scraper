@@ -1,0 +1,47 @@
+name: Run Tubi Scraper
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: '0 0 * * *'          # Daily at midnight UTC
+  workflow_dispatch:             # Manual trigger
+
+jobs:
+  scrape-tubi:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 urllib3 pysocks
+
+      - name: Run tubi_scraper.py
+        run: python tubi_scraper.py
+
+      - name: Commit and push updated files
+        if: success()
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Only add files that exist
+          git add tubi_playlist.m3u tubi_epg.xml 2>/dev/null || true
+          if [ -f tubi_fallback_ids.json ]; then
+            git add tubi_fallback_ids.json
+          fi
+
+          git commit -m "Update Tubi playlist, EPG and fallback IDs - $(date -u +'%Y-%m-%d %H:%M UTC')" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
